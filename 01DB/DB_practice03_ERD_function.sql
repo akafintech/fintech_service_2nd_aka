@@ -4,6 +4,9 @@ USE SAKILA;
 SHOW TABLES;
 USE WORLD;
 
+# ERD SYS 만들기
+-- FILE - NEW MODEL - SAVE 
+
 select * from buy_table;
 
 select * from stock_company_info;
@@ -61,7 +64,7 @@ SELECT 7/2; #나누기
 SELECT 7*2; #곱하기
 SELECT 7+2;
 SELECT 7-2;
-SELECT 7%2;
+SELECT 7%2; -- 나머지 연산자%2 에서 나머지가 1이면 홀수, 나머지가 0이면 짝수 홀짝 구분할 때 많이 사용
 select 7 div 2;
 select 7 mod 2;
 
@@ -78,7 +81,7 @@ select round(29282.2345678, -3); #-자릿수가 오면 소수점 앞으로 개�
 #문자열 함수
 # 문자의 길이를 알아보는 함수
 select char_length('my sql'), length('my sql');
-select char_length('홍 길동'), length('홍 길동');
+select char_length('호 길동'), length('홍 길동');
  
 # 문자를 연결하는 함수 concat(), concat_ws()
 select concat('this', ' is ', 'my sql'); # concat('','',''...); 요소를 단순히 잇기만 하기 때문에 필요에 따라 공백을 넣어줘야 함
@@ -212,3 +215,12 @@ select date_format(now(), '%p %h-%i-%S');
 select date_format(now(), '%T');
 select date_format(now(), '%r');
 select date_format(now(), '%w %r');
+
+SELECT CEIL(4.5); -- 5 출력
+SELECT FLOOR(4.5); -- 4 출력
+SELECT 7%2;
+select 7 div 2;
+SELECT SQRT(4);
+SELECT 7 DIV 2;
+select char_length('홍 길동'), length('홍 길동');
+select char_length('my sql'), length('my sql');
