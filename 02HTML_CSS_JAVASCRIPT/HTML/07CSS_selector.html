@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>07CSS_selector</title>
+    <link rel="stylesheet" href="../CSS/01CSS_selector.css" />
+    <style>
+      h1 {
+        color: red;
+      } /* 모든 h1 태그를 red로 변경 */
+      p {
+        color: blue;
+      } /* 모든 p 태그를 blue로 변경*/
+    </style>
+  </head>
+  <body>
+    <h1>hello world!</h1>
+    <h1>hello world2</h1>
+    <p>this paragraph is styled with CSS</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p style="color: black">Lorem ipsum dolor sit amet.</p>
+    <!-- style로 지정하는게 우선순위가 높지만 하나하나 해야하는 단점이 있음 -->
+    <p>Lorem ipsum dolor sit amet.</p>
+
+    <!-- id, class selector -->
+    <h1 class="center">id, class 셀렉터</h1>
+
+    <div class="container">
+      <p id="p1">paragraph 1</p>
+      <p id="p2">paragraph 2</p>
+      <!-- p#p2라고 입력하면 id 입력란 생성-->
+      <p class="p1">paragraph 3</p>
+      <p class="p2">paragraph 4</p>
+      <!-- p.p2라고 입력하면-->
+      <p class="storng">strong</p>
+      <p class="center">centerclass</p>
+      <p class="graycolor">graycolor</p>
+      <p class="storng center">strong center class</p>
+      <!-- p.strong.center-->
+      <p class="strong center graycolor">strong+center+graycolor class</p>
+      <p class="p1 strong center brown">p1+strong+center+brown</p>
+    </div>
+    <hr />
+
+    <!-- 어트리뷰트 셀렉터 -->
+    <h1 class="center">어트리뷰트 셀렉터 =</h1>
+    <div>
+      <!-- 정확히 일치하는 값을 찾기-->
+      <a href="https://www.google.com">google.com</a><br />
+      <p><a href="https://www.naver.com" target="_blank">naver.com</a></p>
+      <a href="https://daum.com" target="_top">daum.com</a>
+    </div>
+
+    <h1 class="center">어트리뷰트 셀렉터 ~=</h1>
+    <div>
+      <!-- SQL에서 like "% first" 유사한 역할 -->
+      <h2 title="heading first">heading first</h2>
+      <h2 title="heading-first">heading-first</h2>
+      <h2 title="heading second">heading second</h2>
+      <h2 title="heading-second">heading-second</h2>
+    </div>
+
+    <h1 class="center">어트리뷰트 셀렉터 |=</h1>
+    <div>
+      <h2 title="heading first">heading first</h2>
+      <h2 title="heading-first-">heading-first</h2>
+      <h2 title="heading second">heading second</h2>
+      <h2 title="heading-second">heading-second</h2>
+    </div>
+
+    <h1 class="center">어트리뷰트 셀렉터 ^=</h1>
+    <div>
+      <a href="https://www.naver.com">naver.com</a>
+      <a href="http://www.naver.com">naver2.com</a>
+    </div>
+
+    <h1 class="center">어트리뷰트 셀렉터 $=</h1>
+    <div>
+      <a href="https://www.naver.com/aaa.pdf">naver.com/aaa.pdf</a><br />
+      <a href="http://www.naver.com/bbbb.html">naver2.com/bbbb.html</a>
+    </div>
+
+    <h1 class="center">어트리뷰트 셀렉터 *=</h1>
+    <div>
+      <p class="first">first</p>
+      <p class="first_test">first_test</p>
+      <p class="second">second</p>
+      <p class="second test">second test</p>
+      <p class="test">test</p>
+    </div>
+  </body>
+</html>
