@@ -8,3 +8,114 @@
 .container h2{
     font-size: 22px;
 }
+.highlight {
+    color: red;
+}
+header li {
+    font-size : 18px;
+}
+.service-list > :first-child {
+    text-align: center;
+}
+.review > h3 {
+    color: green;
+}
+aside > h2 {
+    text-align: right;
+}
+.notice-list > :last-child {
+    color: orange;
+}
+.notice-list > :nth-of-type(2) {
+    font-size: 20px;
+}
+.review:nth-of-type(1) >p {
+    color: purple;
+}
+footer a {
+    color: green;
+}
+a[target="_blank"] {
+    text-align : center;
+}
+button {
+    font-size: 16px;
+}
+button:hover{
+    color: gray;
+}
+.intro + article {
+    font-size: 24px;
+}
+section h2 {
+    text-align: center;
+}
+.review:last-of-type > p {
+    color: pink;
+}
+.service-list > li:nth-child(3) {
+    color: red;
+}
+nav li:last-of-type {
+    text-align: right;
+}
+article {
+    font-size: 20px;
+}
+aside li:first-of-type {
+    color: blue;
+}
+header h1 {
+    color: purple;
+}
+.services ul {
+    text-align: left;
+}
+footer p {
+    font-size: 12px;
+}
+h3 {
+    color: blue;
+}
+.notice-list li:nth-of-type(2n+1){
+    color: green;
+}
+.notice-list li:nth-of-type(2n){
+    color: orange;
+}
+section p {
+    font-size: 16px;
+}
+article p:first-of-type {
+    color: red;
+}
+nav a:hover {
+    color: green;
+}
+button:hover {
+    font-size: 18px;
+}
+.review h3:first-of-type {
+    font-size: 24px;
+}
+article:first-of-type{
+    color: purple;
+}
+.service-list li:last-of-type {
+    font-size: 18px;
+}
+.intro p {
+    color: green;
+}
+.services h2 {
+    font-size: 20px;
+}
+footer a:hover{
+    color: red;
+}
+.reviews div:last-of-type {
+    font-size: 22px;
+}
+.navbar li:first-of-type {
+    color : orange;
+}
