@@ -2,120 +2,255 @@
 .center {
     text-align: center;
 }
+/* Q1 강사 풀이 */
+/* #main-title {
+    text-align: center;
+} */
+
+/* Q2 */
 .navbar a{
     color: blue;
 }
+
+/* Q3 */
 .container h2{
     font-size: 22px;
 }
+
+/* Q4 */
 .highlight {
     color: red;
 }
+
+/* Q5 */
 header li {
     font-size : 18px;
 }
+
+/* Q6 */
 .service-list > :first-child {
     text-align: center;
 }
+/* 강사 풀이
+.service_list li:first-child{
+text-aligh:center;
+} */
+
+/* Q7 */
 .review > h3 {
     color: green;
 }
+/* 강사풀이
+.review h3 {
+color : green;
+} */
+
+/* Q8 */
 aside > h2 {
     text-align: right;
 }
+
+/* Q9 */
 .notice-list > :last-child {
     color: orange;
 }
+/* 강사풀이
+.notice-list li : last-chile {
+color : orange; 
+} */
+
+ /* Q10 */
 .notice-list > :nth-of-type(2) {
     font-size: 20px;
 }
+/* 강사풀이
+.notice-list li:nth-child(2) {
+font-size : 20px;
+} */
+
+/* Q11 */
 .review:nth-of-type(1) >p {
     color: purple;
 }
+/* 강사풀이
+.review:first-of-type >p {
+color : purple;
+} */
+
+/* Q12 */
 footer a {
     color: green;
 }
+
+/* 강사풀이
+footer > a {
+    color: green;
+} */
+
+/* Q13 */
 a[target="_blank"] {
     text-align : center;
 }
+
+/* Q14 */
 button {
     font-size: 16px;
 }
+
+/* Q15 */
 button:hover{
     color: gray;
 }
+
+/* Q16 */
 .intro + article {
     font-size: 24px;
 }
+
+/* Q17 */
 section h2 {
     text-align: center;
 }
+
+/* Q18 */
 .review:last-of-type > p {
     color: pink;
 }
+/* 강사풀이 
+.review:last-child {
+color : pink; 
+} */
+
+/* Q19 */
 .service-list > li:nth-child(3) {
     color: red;
 }
+/* 강사풀이
+.service-lilt li:nth-child(3P {
+color : red;}
+ */
+
+ /* Q20 */
 nav li:last-of-type {
     text-align: right;
 }
+/* 강사풀이
+nav li:last-child {
+text-align : right;
+} */
+
+ /* Q21 */
 article {
     font-size: 20px;
 }
+
+/* Q22 */
 aside li:first-of-type {
     color: blue;
 }
+
+/* Q23 */
 header h1 {
     color: purple;
 }
+
+/* Q24 */
 .services ul {
     text-align: left;
 }
+
+/* Q25 */
 footer p {
     font-size: 12px;
 }
+/* 강사풀이
+footer > p{
+font-size: 12px;
+} */
+
+/* Q26 */
 h3 {
     color: blue;
 }
+
+/* Q27 */
 .notice-list li:nth-of-type(2n+1){
     color: green;
 }
+/* 강사풀이
+.notice-list li:nth-child(2n+1){
+color : green;
+} */
+
+/* Q28 */
 .notice-list li:nth-of-type(2n){
     color: orange;
 }
+
+/* Q29 */
 section p {
     font-size: 16px;
 }
+
+/* Q30 */
 article p:first-of-type {
     color: red;
 }
+
+ /* Q31 */
 nav a:hover {
     color: green;
 }
+
+/* Q32 */
 button:hover {
     font-size: 18px;
 }
+
+/* Q33 */
 .review h3:first-of-type {
     font-size: 24px;
 }
+
+/* Q34 */
 article:first-of-type{
     color: purple;
 }
+
+/* Q35 */
 .service-list li:last-of-type {
     font-size: 18px;
 }
+
+/* Q36 */
 .intro p {
     color: green;
 }
+
+/* Q37 */
 .services h2 {
     font-size: 20px;
 }
+/* 강사풀이
+.services > h2 {
+font-size : 20px;
+} */
+
+ /* Q38 */
 footer a:hover{
     color: red;
 }
+
+/* Q39 */
 .reviews div:last-of-type {
     font-size: 22px;
 }
+/* 강사풀이
+.reviews div:last-child {
+font-size : 22px}
+ */
+
+ /* Q40 */
 .navbar li:first-of-type {
     color : orange;
 }

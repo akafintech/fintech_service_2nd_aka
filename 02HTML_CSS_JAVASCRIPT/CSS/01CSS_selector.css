@@ -45,6 +45,9 @@ p{color: blue;}
 .brown{
     color: brown;
 }
+.storng.center.graycolor {
+    font-size: 10px;
+}
 /* 어트리뷰트(속성) src, href 셀렉터 attribute selector */
 /* 태그 안의 속성을 찾아서 고칠 수 있음 */
 /* 태그명[속성="값"] : 지정된 속성(어트리뷰트)을 가지면서 값이 같은 요소를 선택 */
