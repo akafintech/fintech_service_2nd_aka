@@ -1,0 +1,43 @@
+html {
+    font-size: 70px;
+}
+
+article {
+    width: 40%px;
+    height: 20%px;
+    background-color: pink;
+    margin: 100px auto;
+}
+
+/* 가로 세로 중 하나만 수치가 넘으면 변함 */
+
+/* 화면 넓이가 900이하인 경우 */
+@media screen and (max-width: 900px) {
+    html {
+        font-size: 40px;
+    }
+    article {
+        background-color: orange;
+
+    }
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+}
+
+
+/* 화면 넓이가 400 이하인 경우 */
+@media screen and (max-width: 400px) {
+    html {
+        font-size: 20px;
+    }
+    article {
+        background-color: aqua;
+
+    }
+}
+
