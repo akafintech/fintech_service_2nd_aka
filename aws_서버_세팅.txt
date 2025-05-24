@@ -1,0 +1,49 @@
+# .py 로 끝나는 파이썬 파일 생성(분석, 수집 코드 작성)
+# pip로 설치할 라이브러리 목록 작성 (pip freeze > requirements.txt)
+# Dockerfile 작성 (사용할 이미지, 필수 라이브러리 설치, 실행할 .py 파일 지정)
+# docker-compose 파일 작성
+# 개발 컴퓨터에서 docker-compose up --build -d 로 컨테이터 실행 후 서비스가 정상적으로 자동하는지 확인
+
+# git init 으로 git 로컬 저장소 생성
+# github에 새로운 레포지토리 생성
+# git remote로 새로운 레포지토리에 연결 및 commit, push
+
+# AWS 접속
+# 서비스 사양에 맞는 인스턴스 선택 및 인스턴스 대여
+# 키페어 생성 및 다운로드(pem) 
+
+# mobaxTerm 다운로드
+# session  => ssh => ec2 공용ip, ec2-user, pem키 등록 후 접속
+
+# git 설치
+sudo yum install -y git
+
+# Docker 설치
+sudo yum update -y
+sudo yum install -y docker
+
+# Docker 서비스 시작
+sudo service docker start
+
+# ec2-user에게 Docker 권한 부여
+sudo usermod -a -G docker ec2-user
+
+# 변경 사항을 적용하려면 로그아웃 후 다시 로그인
+exit
+
+# 도커 설치 확인을 위한 버전 출력
+docker --version
+
+# 도커 컴포우즈 설치
+sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+
+# 도커 컴포우즈에 실행권한 부여
+sudo chmod +x /usr/local/bin/docker-compose
+
+# git clone
+git clone https://github.com/your_username/your_repository_name.git
+
+# 클론으로 받아온 디렉토리로 이동
+cd your_repository_name
+
+# docker-compose up --build -d 로 이미지 만들고 컨테이너 실행
